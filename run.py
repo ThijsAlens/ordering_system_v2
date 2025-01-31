@@ -5,7 +5,6 @@ import csv
 
 import back_end.server
 import back_end.model.item
-import front_end.web_app
 import front_end.create_html
 import config
 
@@ -47,6 +46,10 @@ if __name__ == "__main__":
 
     # Create the html files
     front_end.create_html.create_html()
+
+    # Set up the state files
+    with open(config.FILE_NAME_ORDERS, "w") as file:
+        file.write("[]")
 
     # Start the server
     config.GLOBAL_THREADS["MAIN_THREADS"].append(threading.Thread(target=back_end.server.run_server))

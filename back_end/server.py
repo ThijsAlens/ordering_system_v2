@@ -38,7 +38,6 @@ def _handle_request(connection: socket.socket) -> None:
     Handle the incoming request.
     """
     request = connection.recv(1024).decode('utf-8')
-    logging.info(f"Request received: {request}")
 
     method_match = re.match(r"(GET|POST) /(.*) HTTP/1.1", request)
     
@@ -46,6 +45,7 @@ def _handle_request(connection: socket.socket) -> None:
         method = method_match.group(1)  # GET or POST
         path = method_match.group(2)  # Path (e.g., 'client', 'master', 'static/styles.css', etc.)
         print(f"Method: {method}, Path: {path}")
+        logging.info(f"Request received: {method} - {path}")
     else:
         method = None
         path = None

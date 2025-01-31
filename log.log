@@ -1,68 +1,20 @@
-31-01-2025 13:17 - INFO	 run.py	| Initializing the system
-31-01-2025 13:17 - INFO	 server.py	| Found open port: 3000
-31-01-2025 13:17 - INFO	 server.py	| Server started at 0.0.0.0:3000
-31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 38994), handeling it...
-31-01-2025 13:19 - INFO	 server.py	| Request received: GET /client HTTP/1.1
-Host: localhost:3000
-User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate, br, zstd
-Connection: keep-alive
-Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
-Upgrade-Insecure-Requests: 1
-Sec-Fetch-Dest: document
-Sec-Fetch-Mode: navigate
-Sec-Fetch-Site: none
-Sec-Fetch-User: ?1
-Priority: u=0, i
-
-
-31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 39008), handeling it...
-31-01-2025 13:19 - INFO	 server.py	| Request received: GET /static/styles.css HTTP/1.1
-Host: localhost:3000
-User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
-Accept: text/css,*/*;q=0.1
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate, br, zstd
-Connection: keep-alive
-Referer: http://localhost:3000/client
-Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
-Sec-Fetch-Dest: style
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Site: same-origin
-Priority: u=2
-
-
-31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 39014), handeling it...
-31-01-2025 13:19 - INFO	 server.py	| Request received: GET /static/styles.css HTTP/1.1
-Host: localhost:3000
-User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
-Accept: text/css,*/*;q=0.1
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate, br, zstd
-Connection: keep-alive
-Referer: http://localhost:3000/client
-Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
-Sec-Fetch-Dest: style
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Site: same-origin
-Priority: u=2
-
-
-31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 39020), handeling it...
-31-01-2025 13:19 - INFO	 server.py	| Request received: GET /favicon.ico HTTP/1.1
-Host: localhost:3000
-User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
-Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate, br, zstd
-Connection: keep-alive
-Referer: http://localhost:3000/client
-Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
-Sec-Fetch-Dest: image
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Site: same-origin
-Priority: u=6
-
-
+31-01-2025 19:37 - INFO	 run.py	| Initializing the system
+31-01-2025 19:37 - INFO	 server.py	| Found open port: 3001
+31-01-2025 19:37 - INFO	 server.py	| Server started at 0.0.0.0:3001
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 49814), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: GET - client/send
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 49828), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: GET - client
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 49842), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: GET - static/styles.css
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 49844), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: GET - static/styles.css
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 49860), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: GET - favicon.ico
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 50578), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: POST - client/send
+31-01-2025 19:37 - INFO	 handle_client.py	| Updated order with order_ID 1
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 50592), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: GET - static/styles.css
+31-01-2025 19:37 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 50608), handeling it...
+31-01-2025 19:37 - INFO	 server.py	| Request received: GET - static/styles.css

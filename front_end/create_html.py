@@ -24,6 +24,15 @@ def _create_client_html() -> str:
     """
         </select>
 
+        <label for="oder_id">Selecteer je het ordernummer:</label>
+        <select id="oder_id" name="oder_id">
+    """
+    for id in config.GLOBAL_ACTIVE_ORDERS:
+        html += f"<option value={id}>{id}</option>"
+    html += \
+    """
+        </select>
+        
         <table>
             <thead>
                 <tr>
