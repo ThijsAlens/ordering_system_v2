@@ -1,0 +1,26 @@
+/* styles.css */
+table {
+    margin: 20px auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Ensures borders are collapsed into a single line */
+    width: 60%; /* Adjust width as needed */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: none; /* Remove internal borders between cells */
+}
+
+/* Add borders to the outside of the table */
+table, th, td {
+    border: 2px solid black;
+}
+
+/* Add a border only to rows */
+tbody tr {
+    border-bottom: 1px solid black;
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+}

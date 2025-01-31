@@ -1,12 +1,15 @@
 
 import logging
 import threading
+import csv
 
 import back_end.server
+import back_end.model.item
 import front_end.web_app
+import front_end.create_html
 import config
 
-def setup_logger():
+def setup_logger() -> None:
     logging.basicConfig(
         filename=config.FILE_PATH_LOGGER,
         encoding="utf-8",
@@ -17,15 +20,34 @@ def setup_logger():
         level=logging.INFO  # Set default logging level
     )
 
+def reset_logger() -> None:
+    with open(config.FILE_PATH_LOGGER, "w") as file:
+        file.write("")
+
+def read_menu() -> list[back_end.model.item.Item]:
+    menu: list[back_end.model.item.Item] = []
+    with open("menu.csv", "r", newline="") as file:
+        reader = csv.reader(file)
+        # Skip the header
+        next(reader)
+        id: int = 0
+        for row in reader:
+            menu.append(back_end.model.item.Item(id=id, name=row[0], destination=row[2], price=float(row[1])))
+            id += 1
+    return menu
+
 
 if __name__ == "__main__":
     setup_logger()
+    reset_logger()
     logging.info(f"Initializing the system")
 
-    # Start the server
-    config.GLOBAL_THREADS.append(threading.Thread(target=back_end.server.run_server))
-    config.GLOBAL_THREADS[-1].start()
+    # Read the menu from the menu.csv file
+    config.GLOBAL_MENU = read_menu()
 
-    # Start the web-app application
-    config.GLOBAL_THREADS.append(threading.Thread(target=front_end.web_app.run_web_app))
-    config.GLOBAL_THREADS[-1].start()
+    # Create the html files
+    front_end.create_html.create_html()
+
+    # Start the server
+    config.GLOBAL_THREADS["MAIN_THREADS"].append(threading.Thread(target=back_end.server.run_server))
+    config.GLOBAL_THREADS["MAIN_THREADS"][-1].start()

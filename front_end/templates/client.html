@@ -1,5 +1,46 @@
-<!DOCTYPE html>
-<form action="/client/send" method="post">
-    <input type="text" name="test" placeholder="test">
-    <input type="submit" value="Submit">
-</form>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+    <form action="/client/send" method="post">
+        <label for="client_id">Selecteer je ID:</label>
+        <select id="client_id" name="client_id">
+    <option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Aantal</th>
+                </tr>
+    
+            <tr>
+                <td>Water</td>
+                <td><input type="number" name="0" value="0" min="0" max="9999"></td>
+            </tr>
+        
+            <tr>
+                <td>Bier</td>
+                <td><input type="number" name="1" value="0" min="0" max="9999"></td>
+            </tr>
+        
+            <tr>
+                <td>Balletjes in tomatensaus</td>
+                <td><input type="number" name="2" value="0" min="0" max="9999"></td>
+            </tr>
+        
+            <tr>
+                <td>Dame Blanche</td>
+                <td><input type="number" name="3" value="0" min="0" max="9999"></td>
+            </tr>
+        
+        </table>
+        <input type="submit" value="Bevestig bestelling">
+    </form>
+    </body>
+    </html>
+    

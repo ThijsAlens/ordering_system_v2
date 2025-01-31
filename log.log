@@ -1,100 +1,68 @@
-30-01-2025 19:10 - INFO	 run.py	| Initializing the system
-30-01-2025 19:10 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:10 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:40 - INFO	 run.py	| Initializing the system
-30-01-2025 19:40 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:40 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:41 - INFO	 run.py	| Initializing the system
-30-01-2025 19:41 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:41 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:43 - INFO	 run.py	| Initializing the system
-30-01-2025 19:43 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:43 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:43 - INFO	 run.py	| Initializing the system
-30-01-2025 19:43 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:43 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:44 - INFO	 run.py	| Initializing the system
-30-01-2025 19:44 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:44 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:44 - INFO	 _internal.py	| [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:7000
-30-01-2025 19:44 - INFO	 _internal.py	| [33mPress CTRL+C to quit[0m
-30-01-2025 19:46 - INFO	 run.py	| Initializing the system
-30-01-2025 19:46 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:46 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:46 - INFO	 _internal.py	| [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:7000
-30-01-2025 19:46 - INFO	 _internal.py	| [33mPress CTRL+C to quit[0m
-30-01-2025 19:46 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 19:46:08] "GET / HTTP/1.1" 200 -
-30-01-2025 19:46 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 19:46:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-30-01-2025 19:46 - INFO	 server.py	| Accepted a connection from ('192.168.4.118', 44308), handeling it...
-30-01-2025 19:46 - ERROR	 app.py	| Exception on /send [POST]
-Traceback (most recent call last):
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 883, in full_dispatch_request
-    return self.finalize_request(rv)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 902, in finalize_request
-    response = self.make_response(rv)
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 1174, in make_response
-    raise TypeError(
-TypeError: The view function for 'send_data' did not return a valid response. The function either returned None or ended without a return statement.
-30-01-2025 19:46 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 19:46:14] "[35m[1mPOST /send HTTP/1.1[0m" 500 -
-30-01-2025 19:46 - INFO	 run.py	| Initializing the system
-30-01-2025 19:46 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:46 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:46 - INFO	 _internal.py	| [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:7000
-30-01-2025 19:46 - INFO	 _internal.py	| [33mPress CTRL+C to quit[0m
-30-01-2025 19:46 - ERROR	 app.py	| Exception on /send [POST]
-Traceback (most recent call last):
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 883, in full_dispatch_request
-    return self.finalize_request(rv)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 902, in finalize_request
-    response = self.make_response(rv)
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 1174, in make_response
-    raise TypeError(
-TypeError: The view function for 'send_data' did not return a valid response. The function either returned None or ended without a return statement.
-30-01-2025 19:46 - INFO	 server.py	| Accepted a connection from ('192.168.4.118', 32988), handeling it...
-30-01-2025 19:46 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 19:46:51] "[35m[1mPOST /send HTTP/1.1[0m" 500 -
-30-01-2025 19:49 - INFO	 run.py	| Initializing the system
-30-01-2025 19:49 - INFO	 server.py	| Found open port: 3000
-30-01-2025 19:49 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 19:49 - INFO	 _internal.py	| [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:7000
-30-01-2025 19:49 - INFO	 _internal.py	| [33mPress CTRL+C to quit[0m
-30-01-2025 19:49 - ERROR	 app.py	| Exception on /send [POST]
-Traceback (most recent call last):
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 883, in full_dispatch_request
-    return self.finalize_request(rv)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 902, in finalize_request
-    response = self.make_response(rv)
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/thijs-alens/Documents/Python/venv/lib/python3.12/site-packages/flask/app.py", line 1174, in make_response
-    raise TypeError(
-TypeError: The view function for 'send_data' did not return a valid response. The function either returned None or ended without a return statement.
-30-01-2025 19:49 - INFO	 server.py	| Accepted a connection from ('192.168.4.118', 40698), handeling it...
-30-01-2025 19:49 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 19:49:19] "[35m[1mPOST /send HTTP/1.1[0m" 500 -
-30-01-2025 20:02 - INFO	 run.py	| Initializing the system
-30-01-2025 20:02 - INFO	 server.py	| Found open port: 3000
-30-01-2025 20:02 - INFO	 server.py	| Server started at 0.0.0.0:3000
-30-01-2025 20:02 - INFO	 _internal.py	| [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:7000
-30-01-2025 20:02 - INFO	 _internal.py	| [33mPress CTRL+C to quit[0m
-30-01-2025 20:02 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 20:02:21] "[33mGET / HTTP/1.1[0m" 404 -
-30-01-2025 20:02 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 20:02:28] "GET /client HTTP/1.1" 200 -
-30-01-2025 20:02 - INFO	 server.py	| Accepted a connection from ('192.168.4.118', 44776), handeling it...
-30-01-2025 20:02 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 20:02:36] "[32mPOST /client/send HTTP/1.1[0m" 302 -
-30-01-2025 20:02 - INFO	 _internal.py	| 127.0.0.1 - - [30/Jan/2025 20:02:36] "GET /client HTTP/1.1" 200 -
+31-01-2025 13:17 - INFO	 run.py	| Initializing the system
+31-01-2025 13:17 - INFO	 server.py	| Found open port: 3000
+31-01-2025 13:17 - INFO	 server.py	| Server started at 0.0.0.0:3000
+31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 38994), handeling it...
+31-01-2025 13:19 - INFO	 server.py	| Request received: GET /client HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+
+31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 39008), handeling it...
+31-01-2025 13:19 - INFO	 server.py	| Request received: GET /static/styles.css HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://localhost:3000/client
+Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Priority: u=2
+
+
+31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 39014), handeling it...
+31-01-2025 13:19 - INFO	 server.py	| Request received: GET /static/styles.css HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://localhost:3000/client
+Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Priority: u=2
+
+
+31-01-2025 13:19 - INFO	 server.py	| Accepted a connection from ('127.0.0.1', 39020), handeling it...
+31-01-2025 13:19 - INFO	 server.py	| Request received: GET /favicon.ico HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
+Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://localhost:3000/client
+Cookie: _wb=WB1.c417cdae-162f-4ef5-9e60-299585bdc87e.1734084074858
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+Priority: u=6
+
+

@@ -7,7 +7,7 @@
 ###############################################################################
 
 # The server IP address (the IP-adress of the pc that run.py is executed on)
-SERVER_IP = "192.168.4.118"
+SERVER_IP = "192.168.0.143"
 
 # Only change these values if you know what you are doing
 SERVER_HOST = '0.0.0.0'             # The host to use for the server
@@ -29,10 +29,24 @@ FILE_PATH_LOGGER = "log.log"
 ###############################################################################
 #---------------------------- THREAD MANAGEMENT ------------------------------#
 ###############################################################################
-# List of all threads
-GLOBAL_THREADS = []
+import threading
+GLOBAL_THREADS: dict[str, list[threading.Thread]] = \
+    {"MAIN_THREADS": [],
+     "CLIENT_THREADS": [],
+     "MODEL_MODIFICATION_THREADS": []} 
 
 ###############################################################################
 #--------------------------- MAIN LOOP MANAGEMENT ----------------------------#
 ###############################################################################
-GLOBAL_RUNNING = True           # The main loop of the server
+GLOBAL_RUNNING: bool = True           # The main loop of the server
+
+###############################################################################
+#-------------------------- OTHER GLOBAL VARIABLES ---------------------------#
+###############################################################################
+import back_end.model.item
+GLOBAL_MENU: list[back_end.model.item.Item] = []  # The menu of the restaurant
+
+###############################################################################
+#-------------------------- CLIENT CONFIGURATION -----------------------------#
+###############################################################################
+NUMBER_OF_CLIENTS = 6                # The number of clients that can connect to the server

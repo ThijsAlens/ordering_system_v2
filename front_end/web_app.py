@@ -15,7 +15,7 @@ def home_client():
 def send_data():
     test = request.form.get('test')
     api.api.send_to_server({'test': test})
-    return redirect(url_for('home'))
+    return redirect(url_for('home_client'))
 
 def run_web_app():
     app.run(port=config.WEB_APP_PORT, use_reloader=False, debug=False)
